@@ -8,3 +8,6 @@ node_modules
 /build/
 /public/build
 /api/index.js
+/api/index.js.map
+/app/tailwind.css
+api/index.js.map
