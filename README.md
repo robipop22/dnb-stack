@@ -1,7 +1,6 @@
 # Remix DnB Stack
 
-![The Remix DnB Stack](./dnb-stack-preview.png)
-
+![The Remix DnB Stack](https://github.com/robipop22/dnb-stack/blob/main/dnb-stack-preview.png?raw=true)
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
