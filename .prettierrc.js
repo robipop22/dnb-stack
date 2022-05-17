@@ -6,9 +6,9 @@ module.exports = {
   semi: true,
   singleQuote: true,
   doubleQuote: false,
-  trailingComma: "all",
+  trailingComma: 'all',
   jsxSingleQuote: false,
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
   printWidth: 120,
-  endOfLine: "lf",
+  endOfLine: 'lf',
 };

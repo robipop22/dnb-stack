@@ -1,4 +1,14 @@
+# We don't want lockfiles in stacks, as people could use a different package manager
+# This part will be removed by `remix.init`
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+pnpm-lock.yml
+
 node_modules
+
+/server/index.js
+/public/build
 
 .cache
 .env
@@ -11,3 +21,7 @@ node_modules
 /api/index.js.map
 /app/tailwind.css
 api/index.js.map
+
+/cypress/screenshots
+/cypress/videos
+/coverage

@@ -5,7 +5,7 @@
   ],
   "include": [
     "./index.ts",
-    "e2e/**/*",
+    "integration/e2e/**/*",
     "plugins/**/*",
     "support/**/*",
     "../node_modules/cypress",

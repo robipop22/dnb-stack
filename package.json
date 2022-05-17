@@ -23,7 +23,8 @@
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run:flow": "./node_modules/.bin/cypress run --spec cypress/integration/e2e/$FLOW/_index.spec.ts",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@remix-run/node": "^1.4.3",
