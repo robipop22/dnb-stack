@@ -2,6 +2,8 @@
 
 ![The Remix DnB Stack](https://github.com/robipop22/dnb-stack/blob/main/dnb-stack-preview.png?raw=true)
 
+See it live: https://dnb-stack.vercel.app/
+
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ```sh
