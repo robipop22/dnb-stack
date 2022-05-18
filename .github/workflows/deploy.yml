@@ -29,4 +29,4 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           scope: ${{ secrets.VERCEL_ORG_ID }}
           alias-domains: |
-            {{BRANCH}}.myapp.com
+            {{BRANCH}}.dnb-stack.vercel.app
