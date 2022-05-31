@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "https://dnb-stack.vercel.app",
   "video": false,
   "screenshotOnRunFailure": false
 }

@@ -30,4 +30,5 @@ jobs:
           scope: ${{ secrets.VERCEL_ORG_ID }}
           alias-domains: |
             dnb-stack.vercel.app
+
 # {{BRANCH}}.myapp.com - for deploying to different envs via branches

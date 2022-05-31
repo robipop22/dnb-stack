@@ -19,12 +19,14 @@
     "generate:css": "npx tailwindcss -o ./app/tailwind.css",
     "start": "remix-serve build",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "hook": "yarn lint",
+    "hook": "yarn lint && yarn format:check",
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run:flow": "./node_modules/.bin/cypress run --spec cypress/integration/e2e/$FLOW/_index.spec.ts",
+    "cypress:run": "./node_modules/.bin/cypress run",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "format": "prettier --write ."
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@remix-run/node": "^1.5.0",

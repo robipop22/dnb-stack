@@ -68,6 +68,7 @@ This stack has a github action for automated deploy on merge on the following br
 
 You just need to specify and configure the subdomains of your app.
 Also from the settings in the repository you need to add Actions secrets so that the github action can deploy your app:
+
 - VERCEL_ORG_ID
 - VERCEL_PROJECT_ID
 - VERCEL_TOKEN
@@ -83,7 +84,6 @@ vercel
 
 We use GitHub Actions for continuous integration and deployment. Anything that gets into the `main` branch will be deployed to production after running tests/build/etc. Anything in the `dev` branch will be deployed to staging. There is a also a `qa` branch that is used for testing.
 
-
 ## Testing
 
 ### Cypress
@@ -94,7 +94,7 @@ We use [`@testing-library/cypress`](https://testing-library.com/cypress) for sel
 
 To run a specific test(flow) in development, run `FLOW=books yarn cypress:run:flow` which will start the dev server for the app as well as the Cypress client. Make sure the app is running.
 
-By *flow* we want to define some user flows that we will test. For example, if we want to test the app with a user that wants to see the list of books, we can test that by running `FLOW=books yarn cypress:run:flow`.
+By _flow_ we want to define some user flows that we will test. For example, if we want to test the app with a user that wants to see the list of books, we can test that by running `FLOW=books yarn cypress:run:flow`.
 
 This can be later extended to run multiple flows. Followed the provided example to extend this further.
 
