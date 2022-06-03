@@ -14,7 +14,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: 'Deploy app'
+    name: 'Deploy app & run sanity tests'
 
     steps:
       - uses: actions/checkout@v2
@@ -31,4 +31,5 @@ jobs:
           alias-domains: |
             dnb-stack.vercel.app
 
+      - run: yarn cypress:run
 # {{BRANCH}}.myapp.com - for deploying to different envs via branches
