@@ -31,5 +31,6 @@ jobs:
           alias-domains: |
             dnb-stack.vercel.app
 
+      - run: yarn
       - run: yarn cypress:run
 # {{BRANCH}}.myapp.com - for deploying to different envs via branches
