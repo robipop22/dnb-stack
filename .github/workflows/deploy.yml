@@ -27,6 +27,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-args: '--scope=robipop22' # change this to your project scope
           scope: ${{ secrets.VERCEL_ORG_ID }}
           alias-domains: |
             dnb-stack.vercel.app
