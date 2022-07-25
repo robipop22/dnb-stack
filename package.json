@@ -33,8 +33,8 @@
     "@remix-run/react": "^1.6.5",
     "@remix-run/vercel": "^1.6.5",
     "@vercel/node": "^1.8.3",
-    "react": "^18.0.2",
-    "react-dom": "^18.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.6.5",
@@ -44,8 +44,8 @@
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^1.3.2",
     "c8": "^7.11.3",
     "cypress": "^10.3.0",
