@@ -26,5 +26,5 @@
 
 // @ts-ignore
 Cypress.Commands.add('getByTestID', testID => {
-  return cy.get(`[data-testid="${testID}"]`);
+	return cy.get(`[data-testid="${testID}"]`);
 });

@@ -5,7 +5,7 @@ import booksData from '~/data/books';
 // testing library test a promise
 
 test('getBooks() resolves to correct data', () => {
-  return getBooks().then(books => {
-    expect(books).equal(booksData);
-  });
+	return getBooks().then(books => {
+		expect(books).equal(booksData);
+	});
 });
