@@ -25,3 +25,4 @@ api/index.js.map
 /cypress/screenshots
 /cypress/videos
 /coverage
+api/

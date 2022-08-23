@@ -29,17 +29,17 @@
 		"format:check": "prettier --check ."
 	},
 	"dependencies": {
-		"@remix-run/node": "^1.6.5",
-		"@remix-run/react": "^1.6.5",
-		"@remix-run/vercel": "^1.6.5",
+		"@remix-run/node": "^1.6.8",
+		"@remix-run/react": "^1.6.8",
+		"@remix-run/vercel": "^1.6.8",
 		"@vercel/node": "^1.8.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@remix-run/dev": "^1.6.5",
-		"@remix-run/eslint-config": "^1.6.5",
-		"@remix-run/serve": "^1.6.5",
+		"@remix-run/dev": "^1.6.8",
+		"@remix-run/eslint-config": "^1.6.8",
+		"@remix-run/serve": "^1.6.8",
 		"@testing-library/cypress": "^8.0.2",
 		"@testing-library/dom": "^8.13.0",
 		"@testing-library/jest-dom": "^5.16.4",
