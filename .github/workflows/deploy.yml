@@ -18,10 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          node-version: '16'
       - uses: amondnet/vercel-action@v25
-
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
