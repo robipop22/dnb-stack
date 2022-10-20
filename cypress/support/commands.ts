@@ -28,3 +28,10 @@
 Cypress.Commands.add('getByTestID', testID => {
 	return cy.get(`[data-testid="${testID}"]`);
 });
+
+Cypress.on('uncaught:exception', err => {
+	// we check if the error is
+	if (err.message.includes('Minified React error #418;') || err.message.includes('Minified React error #423;')) {
+		return false;
+	}
+});

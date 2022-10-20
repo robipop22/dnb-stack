@@ -25,17 +25,17 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@remix-run/node": "^1.7.0",
-		"@remix-run/react": "^1.7.0",
-		"@remix-run/vercel": "^1.7.0",
+		"@remix-run/node": "^1.7.2",
+		"@remix-run/react": "^1.7.2",
+		"@remix-run/vercel": "^1.7.2",
 		"@vercel/node": "^2.5.10",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@remix-run/dev": "^1.7.0",
-		"@remix-run/eslint-config": "^1.7.0",
-		"@remix-run/serve": "^1.7.0",
+		"@remix-run/dev": "^1.7.2",
+		"@remix-run/eslint-config": "^1.7.2",
+		"@remix-run/serve": "^1.7.2",
 		"@testing-library/cypress": "^8.0.2",
 		"@testing-library/dom": "^8.13.0",
 		"@testing-library/jest-dom": "^5.16.4",
@@ -44,7 +44,7 @@
 		"@types/react-dom": "^18.0.6",
 		"@vitejs/plugin-react": "^2.0.1",
 		"c8": "^7.11.3",
-		"cypress": "^10.7.0",
+		"cypress": "^10.10.0",
 		"eslint": "^8.11.0",
 		"eslint-config-prettier": "^8.5.0",
 		"happy-dom": "^7.5.12",
