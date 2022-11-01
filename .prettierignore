@@ -15,3 +15,4 @@ api/index.js.map
 
 /coverage
 api/
+.vscode/
