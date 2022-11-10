@@ -16,3 +16,4 @@ api/index.js.map
 /coverage
 api/
 .vscode/
+pnpm-lock.yaml
