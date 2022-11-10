@@ -1,4 +1,4 @@
-name: 'Deploy'
+name: 'Deploy Production'
 
 on:
   release:
@@ -6,14 +6,13 @@ on:
       - published
   push:
     branches:
-      - dev
-      - qa
+      - main
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: 'Deploy app & run sanity tests'
+    name: 'Deploy Production'
 
     steps:
       - uses: actions/checkout@v3
@@ -22,11 +21,10 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--scope=${{ secrets.VERCEL_SCOPE }}'
+          vercel-args: '--scope=${{ secrets.VERCEL_SCOPE }} --prod'
           scope: ${{ secrets.VERCEL_ORG_ID }}
           alias-domains: |
             dnb-stack.vercel.app
 
-      # uncomment the next 2 lines if you want your tests to run after the deploy
       # - run: yarn
       # - run: yarn cypress:run
