@@ -28,5 +28,5 @@ jobs:
             dnb-stack.vercel.app
 
       # uncomment the next 2 lines if you want your tests to run after the deploy
-      # - run: yarn
-      # - run: yarn cypress:run
+      # - run: pnpm
+      # - run: pnpm cypress:run
