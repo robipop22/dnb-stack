@@ -43,7 +43,7 @@
 		"@testing-library/react": "^13.2.0",
 		"@types/react": "^18.0.24",
 		"@types/react-dom": "^18.0.8",
-		"@vitejs/plugin-react": "^2.0.1",
+		"@vitejs/plugin-react": "^3.0.0",
 		"@vitest/coverage-c8": "^0.25.1",
 		"c8": "^7.11.3",
 		"cypress": "^12.0.2",
