@@ -1,5 +1,17 @@
 import { Link } from '@remix-run/react';
 
+export const meta = () => [
+	{
+		title: 'Remix DnB Stack',
+	},
+	{
+		charset: 'utf-8',
+	},
+	{
+		viewport: 'width=device-width,initial-scale=1',
+	},
+];
+
 const Index = () => (
 	<div className="flex justify-start items-center pt-20 h-screen w-screen flex-col text-center">
 		<h1 className="text-7xl pb-10">Remix DnB Stack</h1>
