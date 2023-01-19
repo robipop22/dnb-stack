@@ -15,8 +15,8 @@ const BookCard: FC<Book> = ({
 	<div
 		data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_CONTAINER}-${isbn}`}
 		id={isbn}
-		className=" w-full text-center flex flex-col justify-center items-center my-10 p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-		<h2 data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_TITLE}-${isbn}`} className="font-bold text-xl mb-5 text-white">
+		className=" my-10 flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+		<h2 data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_TITLE}-${isbn}`} className="mb-5 text-xl font-bold text-white">
 			{title}
 		</h2>
 		{shortDescription && (
@@ -38,7 +38,7 @@ const BookCard: FC<Book> = ({
 			/>
 		)}
 		{authors.map(author => (
-			<p key={author} data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_AUTHOR}-${isbn}`} className="text-white text-sm">
+			<p key={author} data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_AUTHOR}-${isbn}`} className="text-sm text-white">
 				{author}
 			</p>
 		))}

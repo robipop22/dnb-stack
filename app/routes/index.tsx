@@ -13,8 +13,8 @@ export const meta = () => [
 ];
 
 const Index = () => (
-	<div className="flex justify-start items-center pt-20 h-screen w-screen flex-col text-center">
-		<h1 className="text-7xl pb-10">Remix DnB Stack</h1>
+	<div className="flex h-screen w-screen flex-col items-center justify-start pt-20 text-center">
+		<h1 className="pb-10 text-7xl">Remix DnB Stack</h1>
 		<h2>This Stack contains a starter template for developing Remix Apps in vercel.</h2>
 		<h2 className="py-10">
 			In the{' '}
