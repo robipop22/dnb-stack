@@ -47,7 +47,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.48.1",
 		"@typescript-eslint/parser": "^5.48.1",
 		"@vitejs/plugin-react": "^3.0.0",
-		"@vitest/coverage-c8": "^0.27.0",
+		"@vitest/coverage-c8": "^0.28.3",
 		"c8": "^7.11.3",
 		"cypress": "^12.3.0",
 		"eslint": "^8.11.0",
