@@ -14,7 +14,6 @@ module.exports = {
 	// publicPath: "/build/",
 	future: {
 		v2_meta: true,
-		unstable_postcss: true,
 		unstable_tailwind: true,
 	},
 };
