@@ -1,5 +1,4 @@
 import type { LoaderFunction } from '@remix-run/node';
-import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 import { getBooks } from '~/client/books';
@@ -26,7 +25,7 @@ export const loader: LoaderFunction = async () => {
 	// response is delayed by 1 second
 	const books = await getBooks();
 
-	return json({ books });
+	return { books };
 };
 
 const BooksRoute = () => {
