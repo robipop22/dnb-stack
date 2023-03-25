@@ -1,4 +1,4 @@
-import type { LoaderFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@vercel/remix';
 import { useLoaderData } from '@remix-run/react';
 
 import { getBooks } from '~/client/books';

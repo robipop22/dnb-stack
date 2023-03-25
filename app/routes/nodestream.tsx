@@ -2,7 +2,7 @@ import { Await, useLoaderData } from '@remix-run/react';
 import { Suspense } from 'react';
 import { defer } from '@vercel/remix';
 
-import type { LoaderFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@vercel/remix';
 
 import { getBooks } from '~/client/books';
 
@@ -41,7 +41,7 @@ const BooksRoute = () => {
 				href="https://vercel.com/docs/concepts/functions/serverless-functions"
 				target="_blank"
 				rel="noreferrer">
-				Read more about Vercel Serverless Functions here
+				Read more about Vercel Serverless Functions
 			</a>
 			<Suspense fallback={<h1 className="mb-10 mt-5 text-center text-3xl font-bold">Loading books ...</h1>}>
 				<Await resolve={books}>{books => <BooksScreen books={books} />}</Await>

@@ -2,7 +2,7 @@ import { Await, useLoaderData } from '@remix-run/react';
 import { Suspense } from 'react';
 import { defer } from '@vercel/remix';
 
-import type { LoaderFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@vercel/remix';
 
 import { getBooks } from '~/client/books';
 

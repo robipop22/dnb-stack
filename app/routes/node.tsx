@@ -1,6 +1,7 @@
-import type { LoaderFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
+
+import type { LoaderFunction } from '@remix-run/node';
 
 import { getBooks } from '~/client/books';
 
