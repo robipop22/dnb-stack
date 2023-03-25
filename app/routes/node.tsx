@@ -1,8 +1,6 @@
 import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
-import type { LoaderFunction } from '@remix-run/node';
-
 import { getBooks } from '~/client/books';
 
 import BooksScreen from '~/screens/books';
@@ -21,7 +19,7 @@ export const meta = () => [
 	},
 ];
 
-export const loader: LoaderFunction = async () => {
+export const loader = async () => {
 	// response is delayed by 1 second
 	const books = await getBooks();
 
@@ -32,7 +30,7 @@ const BooksRoute = () => {
 	const { books } = useLoaderData<typeof loader>();
 
 	return (
-		<>
+		<main>
 			<a
 				className="flex w-full justify-center pt-5 underline"
 				href="https://vercel.com/docs/concepts/functions/serverless-functions"
@@ -41,7 +39,7 @@ const BooksRoute = () => {
 				Read more about Vercel Serverless Functions here
 			</a>
 			<BooksScreen books={books} />
-		</>
+		</main>
 	);
 };
 

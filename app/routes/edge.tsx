@@ -1,4 +1,3 @@
-import type { LoaderFunction } from '@vercel/remix';
 import { useLoaderData } from '@remix-run/react';
 
 import { getBooks } from '~/client/books';
@@ -11,7 +10,7 @@ export const config = { runtime: 'edge' };
 
 export const meta = () => [
 	{
-		title: 'Remix DnB Stack | Books NodeJS',
+		title: 'Remix DnB Stack | Books Edge',
 	},
 	{
 		charset: 'utf-8',
@@ -21,7 +20,7 @@ export const meta = () => [
 	},
 ];
 
-export const loader: LoaderFunction = async () => {
+export const loader = async () => {
 	// response is delayed by 1 second
 	const books = await getBooks();
 
@@ -32,7 +31,7 @@ const BooksRoute = () => {
 	const { books } = useLoaderData<typeof loader>();
 
 	return (
-		<>
+		<main>
 			<a
 				className="flex w-full justify-center pt-5 underline"
 				href="https://vercel.com/docs/concepts/functions/edge-functions"
@@ -41,7 +40,7 @@ const BooksRoute = () => {
 				Read more about Vercel Edge Runtime here
 			</a>
 			<BooksScreen books={books} />
-		</>
+		</main>
 	);
 };
 
