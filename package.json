@@ -22,8 +22,7 @@
 	"dependencies": {
 		"@remix-run/node": "^1.14.3",
 		"@remix-run/react": "^1.14.3",
-		"@remix-run/vercel": "^1.14.3",
-		"@vercel/node": "^2.5.10",
+		"@vercel/remix": "1.14.3-patch.1",
 		"isbot": "^3.6.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
