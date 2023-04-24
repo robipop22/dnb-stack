@@ -46,7 +46,7 @@
 		"cypress": "^12.3.0",
 		"eslint": "^8.11.0",
 		"eslint-config-prettier": "^8.5.0",
-		"happy-dom": "^8.1.0",
+		"happy-dom": "^9.9.2",
 		"husky": "^8.0.0",
 		"jest": "^29.0.1",
 		"prettier": "^2.7.1",
