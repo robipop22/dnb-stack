@@ -7,6 +7,7 @@
 	"scripts": {
 		"build": "remix build",
 		"dev": "remix dev",
+		"dev:hmr": "remix dev -c \"node ./server.js\"",
 		"start": "remix-serve build",
 		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
 		"hook": "pnpm lint && pnpm format:check",
