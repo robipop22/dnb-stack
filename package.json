@@ -21,17 +21,17 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@remix-run/node": "^1.17.1",
-		"@remix-run/react": "^1.17.1",
-		"@vercel/remix": "1.17.0",
+		"@remix-run/node": "^1.18.0",
+		"@remix-run/react": "^1.18.0",
+		"@vercel/remix": "1.18.0",
 		"isbot": "^3.6.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@remix-run/dev": "^1.17.1",
-		"@remix-run/eslint-config": "^1.17.1",
-		"@remix-run/serve": "^1.17.1",
+		"@remix-run/dev": "^1.18.0",
+		"@remix-run/eslint-config": "^1.18.0",
+		"@remix-run/serve": "^1.18.0",
 		"@testing-library/cypress": "^9.0.0",
 		"@testing-library/dom": "^9.0.1",
 		"@testing-library/jest-dom": "^5.16.4",
