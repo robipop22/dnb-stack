@@ -45,7 +45,7 @@
 		"@vitest/coverage-c8": "^0.31.4",
 		"c8": "^7.11.3",
 		"cypress": "^12.3.0",
-		"eslint": "^8.41.0",
+		"eslint": "^8.45.0",
 		"eslint-config-prettier": "^8.5.0",
 		"happy-dom": "^9.18.3",
 		"husky": "^8.0.0",
