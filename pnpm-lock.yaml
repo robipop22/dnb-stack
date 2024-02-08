@@ -71,7 +71,7 @@ devDependencies:
     specifier: ^7.11.3
     version: 7.11.3
   cypress:
-    specifier: ^13.6.2
+    specifier: ^13.6.4
     version: 13.6.4
   eslint:
     specifier: ^8.47.0

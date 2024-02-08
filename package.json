@@ -44,7 +44,7 @@
 		"@vitejs/plugin-react": "^4.2.0",
 		"@vitest/coverage-c8": "^0.31.4",
 		"c8": "^7.11.3",
-		"cypress": "^13.6.2",
+		"cypress": "^13.6.4",
 		"eslint": "^8.47.0",
 		"eslint-config-prettier": "^8.10.0",
 		"happy-dom": "^9.18.3",
