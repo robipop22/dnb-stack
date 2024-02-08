@@ -3,7 +3,7 @@ import { BOOK_CARD_TEST_IDS } from '~/constants/test/bookCard';
 describe('Books', () => {
 	it('should display the data from "Zend Framework in Action"', () => {
 		cy.fixture('specificBookData').then(specificBookData => {
-			cy.visit('books');
+			cy.visit('node');
 			cy.getByTestID(`${BOOK_CARD_TEST_IDS.BOOK_CARD_CONTAINER}-${specificBookData.isbn}`).should('be.visible');
 			cy.getByTestID(`${BOOK_CARD_TEST_IDS.BOOK_CARD_TITLE}-${specificBookData.isbn}`)
 				.should('be.visible')
