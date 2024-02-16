@@ -1,11 +1,12 @@
 {
-	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
+	"include": ["env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
 	"compilerOptions": {
 		"lib": ["DOM", "DOM.Iterable", "ES2019"],
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"jsx": "react-jsx",
-		"moduleResolution": "node",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
 		"resolveJsonModule": true,
 		"target": "ES2019",
 		"strict": true,
@@ -15,6 +16,7 @@
 		},
 		"noEmit": true,
 		"forceConsistentCasingInFileNames": true,
-		"allowJs": true
+		"allowJs": true,
+		"skipLibCheck": true
 	}
 }
