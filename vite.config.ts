@@ -4,6 +4,7 @@
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { vitePlugin as remix } from '@remix-run/dev';
+import { vercelPreset } from '@vercel/remix/vite';
 import { installGlobals } from '@remix-run/node';
 
 installGlobals();
@@ -21,6 +22,7 @@ export default defineConfig({
 			// publicPath: "/build/",
 			tailwind: true,
 			serverModuleFormat: 'cjs',
+			presets: [vercelPreset()],
 		}),
 		tsconfigPaths(),
 	],
