@@ -10,14 +10,14 @@
 		"build": "remix vite:build",
 		"start": "remix-serve ./build/server/index.js",
 		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-		"hook": "pnpm lint && pnpm format:check",
+		"hook": "bun lint && bun format:check",
 		"cypress:open": "./node_modules/.bin/cypress open",
 		"cypress:run:flow": "./node_modules/.bin/cypress run --spec cypress/integration/e2e/$FLOW/_index.spec.ts",
 		"cypress:run": "./node_modules/.bin/cypress run",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage",
-		"format:check": "pnpm exec prettier --check app --cache --cache-strategy metadata",
-		"format:write": "pnpm exec prettier --write app --cache --cache-strategy metadata",
+		"format:check": "bun prettier --check app --cache --cache-strategy metadata",
+		"format:write": "bun prettier --write app --cache --cache-strategy metadata",
 		"prepare": "husky install"
 	},
 	"dependencies": {
