@@ -21,7 +21,6 @@ export default defineConfig({
 			// serverBuildPath: "api/index.js",
 			// publicPath: "/build/",
 			tailwind: true,
-			serverModuleFormat: 'cjs',
 			presets: [vercelPreset()],
 		}),
 		tsconfigPaths(),
