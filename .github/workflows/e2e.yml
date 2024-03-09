@@ -4,9 +4,10 @@
 name: E2E Scheduled Tests
 
 on:
+  push
   # schedule:
   # - cron: '22 0 * * *'
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   test:
@@ -14,15 +15,11 @@ jobs:
     name: 'Run ALL Tests'
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3 # Checkout repo
+      - uses: oven-sh/setup-bun@v1 # Setup bun
         with:
-          version: 7
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install
+          bun-version: latest # You can also use a specific version
+      - run: bun install # Only needed if you have any dependencies
+
       - name: Run Tests
-        run: pnpm cypress:run
+        run: bun cypress:run
