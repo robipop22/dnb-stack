@@ -15,11 +15,11 @@ jobs:
     name: 'Run ALL Tests'
 
     steps:
-      - uses: actions/checkout@v3 # Checkout repo
-      - uses: oven-sh/setup-bun@v1 # Setup bun
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest # You can also use a specific version
-      - run: bun install # Only needed if you have any dependencies
+          bun-version: latest
+      - run: bun install
 
       - name: Run Tests
         run: bun cypress:run
