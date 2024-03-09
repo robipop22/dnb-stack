@@ -31,13 +31,13 @@ Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --
 Make sure the dependencies are installed
 
 ```sh
-pnpm
+bun i
 ```
 
 Afterwards, start the Remix development server like so:
 
 ```sh
-pnpm dev
+bun dev
 ```
 
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
@@ -53,7 +53,7 @@ This prevents us from having to run the linters into our pipelines. It will not 
 The pre-commit hook will run the following commands:
 
 ```sh
-pnpm hook
+bun hook
 ```
 
 You can move this step into a github action, or run it manually. But this method is faster for development as you won't have to wait for the hook to run in the pipeline.
@@ -92,9 +92,9 @@ We use Cypress for our End-to-End tests in this project. You'll find those in th
 
 We use [`@testing-library/cypress`](https://testing-library.com/cypress) for selecting elements on the page semantically.
 
-To run a specific test(flow) in development, run `FLOW=books pnpm cypress:run:flow` which will start the dev server for the app as well as the Cypress client. Make sure the app is running.
+To run a specific test(flow) in development, run `FLOW=books bun cypress:run:flow` which will start the dev server for the app as well as the Cypress client. Make sure the app is running.
 
-By _flow_ we want to define some user flows that we will test. For example, if we want to test the app with a user that wants to see the list of books, we can test that by running `FLOW=books pnpm cypress:run:flow`.
+By _flow_ we want to define some user flows that we will test. For example, if we want to test the app with a user that wants to see the list of books, we can test that by running `FLOW=books bun cypress:run:flow`.
 
 This can be later extended to run multiple flows. Followed the provided example to extend this further.
 
@@ -102,11 +102,11 @@ This can be later extended to run multiple flows. Followed the provided example 
 
 For lower level tests of utilities and individual components, we use `vitest`. We have DOM-specific assertion helpers via [`@testing-library/jest-dom`](https://testing-library.com/jest-dom).
 
-You can run the tests with `pnpm test` or `pnpm vitest:coverage` to also show the coverage.
+You can run the tests with `bun run test` or `bun run vitest:coverage` to also show the coverage.
 
 ### Type Checking
 
-This project uses TypeScript. It's recommended to get TypeScript set up for your editor to get a really great in-editor experience with type checking and auto-complete. To run type checking across the whole project, run `pnpm lint`.
+This project uses TypeScript. It's recommended to get TypeScript set up for your editor to get a really great in-editor experience with type checking and auto-complete. To run type checking across the whole project, run `bun lint`.
 
 ### Linting
 
@@ -114,4 +114,4 @@ This project uses ESLint for linting. That is configured in `.eslintrc.js`.
 
 ### Formatting
 
-We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `pnpm format:write` script you can run to format all files in the project.
+We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `bun format:write` script you can run to format all files in the project.
