@@ -19,8 +19,8 @@ npx create-remix --template robipop22/dnb-stack
 - Styling with [Tailwind](https://tailwindcss.com/)
 - End-to-end testing with [Cypress](https://cypress.io)
 - Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
-- Code formatting with [Prettier](https://prettier.io)
-- Linting with [ESLint](https://eslint.org)
+- Code Formatting with [Biome](https://biomejs.dev/)
+- Code Linting with [Biome](https://biomejs.dev/)
 - Static Types with [TypeScript](https://typescriptlang.org)
 - Pre-commit hooks using [Husky](https://typicode.github.io/husky/#/)
 
@@ -110,8 +110,8 @@ This project uses TypeScript. It's recommended to get TypeScript set up for your
 
 ### Linting
 
-This project uses ESLint for linting. That is configured in `.eslintrc.js`.
+This Project uses Biome for linting. That is configured in `biome.json`.
 
 ### Formatting
 
-We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `bun format:write` script you can run to format all files in the project.
+We use [Biome](https://biomejs.dev/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Biome plugin]

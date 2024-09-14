@@ -1,11 +1,11 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
+import { vitePlugin as remix } from '@remix-run/dev';
+import { installGlobals } from '@remix-run/node';
+import { vercelPreset } from '@vercel/remix/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { vitePlugin as remix } from '@remix-run/dev';
-import { vercelPreset } from '@vercel/remix/vite';
-import { installGlobals } from '@remix-run/node';
 
 installGlobals();
 

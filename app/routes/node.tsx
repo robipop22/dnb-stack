@@ -35,7 +35,8 @@ const BooksRoute = () => {
 				className="flex w-full justify-center pt-5 underline"
 				href="https://vercel.com/docs/concepts/functions/serverless-functions"
 				target="_blank"
-				rel="noreferrer">
+				rel="noreferrer"
+			>
 				Read more about Vercel Serverless Functions here
 			</a>
 			<BooksScreen books={books} />

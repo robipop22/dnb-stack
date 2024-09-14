@@ -20,7 +20,7 @@ import './commands';
 // require('./commands')
 
 declare global {
-	// eslint-disable-next-line @typescript-eslint/no-namespace
+	// biome-ignore lint/style/noNamespace: Cypress uses namespaces for type definitions
 	namespace Cypress {
 		interface Chainable {
 			/**

@@ -1,8 +1,8 @@
-import type { LinksFunction } from '@vercel/remix';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import type { LinksFunction } from '@vercel/remix';
 
-import styles from './tailwind.css?url';
 import globalStyles from './styles/globals.css?url';
+import styles from './tailwind.css?url';
 
 export const links: LinksFunction = () => [
 	{ rel: 'stylesheet', href: styles },

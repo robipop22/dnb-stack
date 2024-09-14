@@ -5,7 +5,7 @@ export default defineConfig({
 	screenshotOnRunFailure: false,
 
 	e2e: {
-		setupNodeEvents(on, config) {
+		setupNodeEvents() {
 			// implement node event listeners here
 		},
 		baseUrl: 'https://dnb-stack.vercel.app',

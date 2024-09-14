@@ -36,7 +36,8 @@ const BooksRoute = () => {
 				className="flex w-full justify-center pt-5 underline"
 				href="https://vercel.com/docs/concepts/functions/edge-functions"
 				target="_blank"
-				rel="noreferrer">
+				rel="noreferrer"
+			>
 				Read more about Vercel Edge Runtime here
 			</a>
 			<BooksScreen books={books} />

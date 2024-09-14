@@ -24,7 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 Cypress.Commands.add('getByTestID', testID => {
 	return cy.get(`[data-testid="${testID}"]`);

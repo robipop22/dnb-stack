@@ -1,4 +1,4 @@
-import type { ReactElement, FC } from 'react';
+import type { FC, ReactElement } from 'react';
 
 import BookCard from '~/components/BookCard';
 

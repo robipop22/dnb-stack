@@ -1,4 +1,4 @@
-import type { ReactElement, FC } from 'react';
+import type { FC, ReactElement } from 'react';
 
 import type { Book } from '~/interfaces/books';
 
@@ -15,7 +15,8 @@ const BookCard: FC<Book> = ({
 	<div
 		data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_CONTAINER}-${isbn}`}
 		id={isbn}
-		className=" my-10 flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+		className=" my-10 flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+	>
 		<h2 data-testid={`${BOOK_CARD_TEST_IDS.BOOK_CARD_TITLE}-${isbn}`} className="mb-5 text-xl font-bold text-white">
 			{title}
 		</h2>
