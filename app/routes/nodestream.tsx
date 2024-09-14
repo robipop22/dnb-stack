@@ -1,5 +1,5 @@
+import { defer } from '@remix-run/node';
 import { Await, useLoaderData } from '@remix-run/react';
-import { defer } from '@vercel/remix';
 import { Suspense } from 'react';
 
 import { getBooks } from '~/client/books';

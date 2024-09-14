@@ -17,7 +17,6 @@
 			"./public/build",
 			"**/.cache",
 			"**/.env",
-			"**/.vercel",
 			"**/.output",
 			"./build/",
 			"./api/index.js",
