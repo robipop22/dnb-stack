@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 export const meta = () => [
 	{
-		title: 'Remix DnB Stack',
+		title: 'React Router DnB Stack',
 	},
 	{
 		charset: 'utf-8',
@@ -15,8 +15,8 @@ export const meta = () => [
 
 const Index = () => (
 	<div className="flex h-screen w-screen flex-col items-center justify-start pt-20 text-center">
-		<h1 className="pb-10 text-7xl">Remix DnB Stack</h1>
-		<h2>This Stack contains a starter template for developing Remix Apps in vercel.</h2>
+		<h1 className="pb-10 text-7xl">React Router DnB Stack</h1>
+		<h2>This Stack contains a starter template for developing React Router Apps in vercel.</h2>
 		<h2 className="pb-10 pt-10">
 			In the the following routes you will find an example of a loader. This stack works great with both your own api's
 			or a separate 3rd api.

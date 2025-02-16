@@ -10,7 +10,7 @@ export const config = { runtime: 'edge' };
 
 export const meta = () => [
 	{
-		title: 'Remix DnB Stack | Books Edge Streaming',
+		title: 'React Router DnB Stack | Books Edge Streaming',
 	},
 	{
 		charset: 'utf-8',

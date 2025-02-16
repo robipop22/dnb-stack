@@ -1,13 +1,13 @@
-# Remix DnB Stack
+# React Router DnB Stack
 
-![The Remix DnB Stack](https://github.com/robipop22/dnb-stack/blob/main/dnb-stack-preview.png?raw=true)
+![The React Router DnB Stack](https://github.com/robipop22/dnb-stack/blob/main/dnb-stack-preview.png?raw=true)
 
 See it live: https://dnb-stack.vercel.app/
 
-Learn more about [Remix Stacks](https://remix.run/stacks).
+Learn more about [React Router Stacks](https://React Router.run/stacks).
 
 ```sh
-npx create-remix --template robipop22/dnb-stack
+bunx create-react-router@latest --template robipop22/dnb-stack
 ```
 
 ## What's in the stack
@@ -24,7 +24,7 @@ npx create-remix --template robipop22/dnb-stack
 - Static Types with [TypeScript](https://typescriptlang.org)
 - Pre-commit hooks using [Husky](https://typicode.github.io/husky/#/)
 
-Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
+Not a fan of bits of the stack? Fork it, change it, and use `bunx create-react-router@latest`! Make it your own.
 
 ## Development
 
@@ -34,7 +34,7 @@ Make sure the dependencies are installed
 bun i
 ```
 
-Afterwards, start the Remix development server like so:
+Afterwards, start the React Router development server like so:
 
 ```sh
 bun dev

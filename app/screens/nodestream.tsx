@@ -8,7 +8,7 @@ import BooksContent from '~/components/BooksContent';
 
 export const meta = () => [
 	{
-		title: 'Remix DnB Stack | Books NodeJS Streaming',
+		title: 'React Router DnB Stack | Books NodeJS Streaming',
 	},
 	{
 		charset: 'utf-8',

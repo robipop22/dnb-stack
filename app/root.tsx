@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@vercel/remix';
+import type { LinksFunction } from 'react-router';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
 import globalStyles from './styles/globals.css?url';
