@@ -4,10 +4,6 @@ import { getBooks } from '~/client/books';
 
 import BooksScreen from '~/components/books';
 
-// edge route
-
-export const config = { runtime: 'edge' };
-
 export const meta = () => [
 	{
 		title: 'React Router DnB Stack | Books Edge',
@@ -19,6 +15,12 @@ export const meta = () => [
 		viewport: 'width=device-width,initial-scale=1',
 	},
 ];
+
+export const headers = () => {
+	return {
+		'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
+	};
+};
 
 export const loader = async () => {
 	// response is delayed by 1 second
