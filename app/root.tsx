@@ -1,5 +1,5 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 import type { LinksFunction } from '@vercel/remix';
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
 import globalStyles from './styles/globals.css?url';
 import styles from './tailwind.css?url';

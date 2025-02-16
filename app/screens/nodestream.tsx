@@ -1,5 +1,5 @@
-import { useLoaderData } from 'react-router';
 import { Suspense } from 'react';
+import { useLoaderData } from 'react-router';
 
 import { getBooks } from '~/client/books';
 import BooksContent from '~/components/BooksContent';
