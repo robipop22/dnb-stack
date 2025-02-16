@@ -27,7 +27,8 @@
 			"./coverage",
 			"**/api/",
 			"**/.vscode/",
-			"**/pnpm-lock.yaml"
+			"**/pnpm-lock.yaml",
+			"./.react-router/types"
 		]
 	},
 	"organizeImports": { "enabled": true },
