@@ -21,6 +21,7 @@ node_modules
 /api/index.js
 /api/index.js.map
 api/index.js.map
+.react-router/
 
 /cypress/screenshots
 /cypress/videos

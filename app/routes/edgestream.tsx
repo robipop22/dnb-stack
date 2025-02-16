@@ -1,12 +1,10 @@
-import { Await, useLoaderData } from '@remix-run/react';
-import { defer } from '@vercel/remix';
+import { useLoaderData } from 'react-router';
 import { Suspense } from 'react';
 
 import { getBooks } from '~/client/books';
+import BooksContent from '~/components/BooksContent';
 
-import BooksScreen from '~/screens/books';
-
-// edge route with streaming response, check line 13 and 31
+// edge route with streaming response using React 19's use API
 
 export const config = { runtime: 'edge' };
 
@@ -24,11 +22,9 @@ export const meta = () => [
 
 export const loader = async () => {
 	// response is delayed by 1 second
-
-	return defer({
-		// notice here how we don't use the await keyword, if we use that then Remix will wait for the promise to resolve
+	return {
 		books: getBooks(),
-	});
+	};
 };
 
 const BooksRoute = () => {
@@ -38,14 +34,14 @@ const BooksRoute = () => {
 		<main>
 			<a
 				className="flex w-full justify-center pt-5 underline"
-				href="https://vercel.com/docs/concepts/functions/edge-functions"
+				href="https://vercel.com/docs/concepts/edge-functions/edge-functions-api"
 				target="_blank"
 				rel="noreferrer"
 			>
-				Read more about Vercel Edge Runtime here
+				Read more about Vercel Edge Functions
 			</a>
 			<Suspense fallback={<h1 className="mb-10 mt-5 text-center text-3xl font-bold">Loading books ...</h1>}>
-				<Await resolve={books}>{books => <BooksScreen books={books} />}</Await>
+				<BooksContent booksPromise={books} />
 			</Suspense>
 		</main>
 	);

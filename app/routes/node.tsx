@@ -1,5 +1,4 @@
-import { json } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
+import { useLoaderData } from 'react-router';
 
 import { getBooks } from '~/client/books';
 
@@ -23,7 +22,7 @@ export const loader = async () => {
 	// response is delayed by 1 second
 	const books = await getBooks();
 
-	return json({ books });
+	return { books };
 };
 
 const BooksRoute = () => {

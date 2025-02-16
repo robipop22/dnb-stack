@@ -1,12 +1,10 @@
-import { Await, useLoaderData } from '@remix-run/react';
-import { defer } from '@vercel/remix';
+import { useLoaderData } from 'react-router';
 import { Suspense } from 'react';
 
 import { getBooks } from '~/client/books';
+import BooksContent from '~/components/BooksContent';
 
-import BooksScreen from '~/screens/books';
-
-// nodejs route with streaming response, check line 30
+// nodejs route with streaming response using React 19's use API
 
 export const meta = () => [
 	{
@@ -21,12 +19,11 @@ export const meta = () => [
 ];
 
 export const loader = async () => {
-	// response is delayed by 1 second
-
-	return defer({
-		// notice here how we don't use the await keyword, if we use that then Remix will wait for the promise to resolve
+	// Return the promise directly without awaiting
+	// This allows React to handle the streaming with Suspense
+	return {
 		books: getBooks(),
-	});
+	};
 };
 
 const BooksRoute = () => {
@@ -43,7 +40,7 @@ const BooksRoute = () => {
 				Read more about Vercel Serverless Functions
 			</a>
 			<Suspense fallback={<h1 className="mb-10 mt-5 text-center text-3xl font-bold">Loading books ...</h1>}>
-				<Await resolve={books}>{books => <BooksScreen books={books} />}</Await>
+				<BooksContent booksPromise={books} />
 			</Suspense>
 		</main>
 	);

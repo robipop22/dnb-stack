@@ -1,5 +1,5 @@
 {
-	"include": ["env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
+	"include": ["env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", ".react-router/types/**/*"],
 	"compilerOptions": {
 		"lib": ["DOM", "DOM.Iterable", "ES2019"],
 		"isolatedModules": true,
@@ -17,6 +17,8 @@
 		"noEmit": true,
 		"forceConsistentCasingInFileNames": true,
 		"allowJs": true,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"types": ["@react-router/node", "vite/client"],
+		"rootDirs": [".", "./.react-router/types"]
 	}
 }
