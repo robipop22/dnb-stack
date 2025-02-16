@@ -1,7 +1,28 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
 	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-	"files": { "ignoreUnknown": false, "ignore": [] },
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": [
+			"./server/index.js",
+			"./public/build",
+			"**/.cache",
+			"**/.env",
+			"**/.vercel",
+			"**/.output",
+			"./build/",
+			"./api/index.js",
+			"./api/index.js.map",
+			"./app/tailwind.css",
+			"api/index.js.map",
+			"./coverage",
+			"**/api/",
+			"**/.vscode/",
+			"**/pnpm-lock.yaml",
+			".react-router/",
+			".react-router/**/*"
+		]
+	},
 	"formatter": {
 		"enabled": true,
 		"useEditorconfig": true,
@@ -28,7 +49,7 @@
 			"**/api/",
 			"**/.vscode/",
 			"**/pnpm-lock.yaml",
-			"./.react-router/types"
+			".react-router/"
 		]
 	},
 	"organizeImports": { "enabled": true },
