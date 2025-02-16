@@ -1,4 +1,10 @@
-import { type RouteConfig } from '@react-router/dev/routes';
-import { flatRoutes } from '@react-router/fs-routes';
+import { type RouteConfig, route, index } from '@react-router/dev/routes';
 
-export default flatRoutes() satisfies RouteConfig;
+// Define your routes with type safety
+export default [
+	index('./screens/home.tsx'),
+	route('edge', './screens/edge.tsx'),
+	route('edgestream', './screens/edgestream.tsx'),
+	route('node', './screens/node.tsx'),
+	route('nodestream', './screens/nodestream.tsx'),
+] satisfies RouteConfig;

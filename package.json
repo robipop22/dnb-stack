@@ -19,7 +19,6 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@react-router/fs-routes": "^7.1.5",
 		"@react-router/node": "^7.0.0",
 		"@react-router/remix-routes-option-adapter": "^7.1.5",
 		"@vercel/react-router": "^1.0.2",
@@ -37,9 +36,8 @@
 		"@testing-library/dom": "^9.0.1",
 		"@testing-library/jest-dom": "^5.16.4",
 		"@testing-library/react": "^14.0.0",
-		"@types/node": "20.5.1",
-		"@types/react": "^18.0.24",
-		"@types/react-dom": "^18.2.7",
+		"@types/react": "^19.0.9 ",
+		"@types/react-dom": "^19.0.3",
 		"@vitejs/plugin-react": "^4.2.0",
 		"@vitest/coverage-v8": "1.3.1",
 		"c8": "^7.11.3",

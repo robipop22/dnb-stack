@@ -2,7 +2,7 @@ import { useLoaderData } from 'react-router';
 
 import { getBooks } from '~/client/books';
 
-import BooksScreen from '~/screens/books';
+import BooksScreen from '~/components/books';
 
 // nodejs route
 
