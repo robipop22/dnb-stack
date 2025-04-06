@@ -20,7 +20,8 @@
 			"**/.vscode/",
 			"**/pnpm-lock.yaml",
 			".react-router/",
-			".react-router/**/*"
+			".react-router/**/*",
+			"build/**/*"
 		]
 	},
 	"formatter": {
@@ -49,7 +50,8 @@
 			"**/api/",
 			"**/.vscode/",
 			"**/pnpm-lock.yaml",
-			".react-router/"
+			".react-router/",
+			"build/**/*"
 		]
 	},
 	"organizeImports": { "enabled": true },
